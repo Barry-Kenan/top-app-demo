@@ -10,5 +10,9 @@ export {default as Sort} from './Sort/Sort';
 export {default as Input} from './Input/Input';
 export {default as Textarea} from './Textarea/Textarea';
 export {default as Search} from './Search/Search';
+export {default as Product} from './Product/Product';
+export {default as Divider} from './Divider/Divider';
+export {default as Review} from './Review/Review';
+export {default as ReviewForm} from './ReviewForm/ReviewForm';
 
 
