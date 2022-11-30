@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { GetStaticProps } from 'next';
 import { useState } from 'react';
-import { Htag, Button, P, Tag, Rating } from '../components';
+import { Htag, Button, P, Tag, Rating, Input, Textarea } from '../components';
+import { API } from '../helpers/api';
 import { MenuItem } from '../interfaces/menu.interface';
 import { withLayout } from '../layout/Layout';
 
@@ -25,6 +26,8 @@ function Home({ menu }: HomeProps): JSX.Element {
       <Tag color='red'>asdfasdf</Tag>
       <Tag color='green'>asdfasdf</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
+      <Input placeholder='text' />
+      <Textarea placeholder='text area' />
 
     </>
   );
@@ -35,7 +38,7 @@ export default withLayout(Home);
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const firstCategory = 0;
-  const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/find', {
+  const { data: menu } = await axios.post<MenuItem[]>(API.topPage.find, {
     firstCategory
   });
   return {
