@@ -2,6 +2,7 @@
   "extends": [
     "stylelint-config-standard"
   ],
+  "ignoreFiles": "./out/**",
   "plugins": ["stylelint-order"],
   "rules": {
     "indentation": [4],
