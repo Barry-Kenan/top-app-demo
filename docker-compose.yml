@@ -4,5 +4,5 @@ services:
     image: top-appdemo
     container_name: top-appdemo
     restart: always
-    posrts:
+    ports:
     - 3000:3000
