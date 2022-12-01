@@ -1,5 +1,5 @@
 # Приложение top-app по курсам "React + Next.js"
-React, Typescript, NextJS, Hooks, SSR, Grid
+React, Typescript, NextJS, Hooks, SSR, Grid, Axios, Framer-motion
 https://top-app-demo.web.app/
 ## Инструкция по запуску приложения:
   1) Скачать файлы с GitHub
