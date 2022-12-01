@@ -1,3 +1,4 @@
+import React from 'react';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import axios from 'axios';
